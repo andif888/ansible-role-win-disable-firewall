@@ -1,0 +1,9 @@
+---
+# tasks file for ansible-role-win-disable-firewall
+- name: Disable Firewall
+  win_firewall:
+    state: disabled
+    profiles:
+      - Domain
+      - Private
+      - Public
